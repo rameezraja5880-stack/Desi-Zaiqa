@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desi Zaiqa - Home Cooking Spices</title>
+    <link rel="stylesheet" href="masla.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-pepper-hot"></i> Desi Zaiqa
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Spices</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+        <div class="cart-icon" id="cart-icon">
+            <i class="fa-solid fa-shopping-cart"></i>
+            <span id="cart-count">0</span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>Khushboo Aur Zaiqa, Har Ghar Ki Pehchan</h1>
+            <p>100% pure and organic spices for your everyday home cooking.</p>
+            <a href="#products" class="btn">Shop Now</a>
+        </div>
+    </header>
+
+    <!-- Products Section -->
+    <section id="products" class="products-section">
+        <h2 class="section-title">Our Premium Spices</h2>
+        <div class="product-grid" id="product-grid">
+            <!-- Products injected by JS -->
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h2 class="section-title">About Desi Zaiqa</h2>
+        <div class="about-grid">
+            <div class="about-text">
+                <h3>Ghar Ke Masale, Khushiyan Banate Hain</h3>
+                <p>Desi Zaiqa ek aam ghar ki kahani hai, jo har aam ghar ke khane ko khaas banane ka jazba rakhti hai. Hamara maqsad aap tak 100% khalis, behtareen aur saaf suthre masale pohanchana hai. Hum mantay hain ke har lazeez khane ki buniyad uske masalon mein chupi hoti hai.</p>
+                <p>Hamare masale baghair kisi milawat (no preservatives or artificial colors) ke tayar kiye jate hain, bilkul wese hi jaise dadi-nani ke zamane mein gharon mein peese jate thay. Desi Zaiqa apnain, aur apne khano mein sehat aur lazzat dono shamil karein.</p>
+                <ul class="about-features">
+                    <li><i class="fa-solid fa-leaf"></i> 100% Pure & Organic</li>
+                    <li><i class="fa-solid fa-mortar-pestle"></i> Traditionally Ground</li>
+                    <li><i class="fa-solid fa-heart"></i> Made with Love</li>
+                </ul>
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="About Desi Zaiqa Spices">
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-cart">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cart-items" class="cart-items">
+                <!-- Cart items injected by JS -->
+            </div>
+            <div class="cart-total">
+                <h3>Total: Rs <span id="total-price">0</span></h3>
+            </div>
+            <button class="btn checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Desi Zaiqa Spices. All rights reserved.</p>
+    </footer>
+
+    <script src="masla.js"></script>
+</body>
+</html>
